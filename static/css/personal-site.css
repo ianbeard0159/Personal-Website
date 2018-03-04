@@ -1,0 +1,319 @@
+@-ms-viewport{
+    width: device-width;
+}
+body{
+    background:
+        radial-gradient(rgb(5, 50, 58), rgb(2, 26, 31));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+p{
+    margin: 1%;
+}
+#foreground{
+    display: block;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: 
+        radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.308)),
+
+        repeating-linear-gradient(rgba(20, 20, 20, 0.1), 
+                                  rgba(20, 20, 20, 0.1) 0.5%, 
+                                  rgba(0, 0, 0, 0) 0.5%,
+                                  rgba(0, 0, 0, 0) 1%);
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10vh auto;
+    height: 80vh;
+    width: 80vw;
+    max-width: 1200px;
+    max-height: 800px;
+}
+#sidebar{
+    background:
+        linear-gradient(135deg, 
+                        transparent 8%, 
+                        rgb(7, 76, 88) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 8%, 
+                        rgb(7, 76, 88) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 8%, 
+                        rgb(7, 76, 88) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 8%, 
+                        rgb(7, 76, 88) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    color: white;
+    font-size: 2vh;
+
+    height: 96%;
+    width: 90%;
+    margin: 5% 5%;
+}
+#sidebar-border{
+    background:
+        linear-gradient(135deg, 
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+    width: 30%;
+    position: relative;
+}
+#display{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+
+    height: 100%;
+    width: 70%;
+}
+#display-window-border{
+    background:
+        linear-gradient(135deg, 
+                        transparent 0%,  
+                        rgb(19, 182, 211) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 5%,  
+                        rgb(19, 182, 211) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 5%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 0%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 79%;
+    width: 100%;
+    position: relative;
+}
+#display-window{
+    background:
+        linear-gradient(135deg, 
+                        transparent 0%,  
+                        rgb(19, 130, 150) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 5%,  
+                        rgb(19, 130, 150) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 5%,  
+                        rgb(19, 130, 150) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 0%,  
+                        rgb(19, 130, 150) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 95%;
+    width: 98%;
+}
+.bar{
+    display: flex;
+    justify-content: flex-start;
+
+    width: 80vw;
+    max-width: 1200px;
+    height: 8%
+}
+#bottom-bar{
+    align-items: flex-end;
+}
+#top-lable{
+	background:
+        linear-gradient(135deg, 
+                        transparent 45%,  
+                        rgb(19, 182, 211) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 50%,  
+                        rgb(19, 182, 211) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 0%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 0%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    
+	height: 200%;
+    width: 60%;
+    margin-left: 6%;
+    margin-right: -14%;
+}
+#bottom-lable{
+	background:
+        linear-gradient(135deg, 
+                        transparent 0%,  
+                        rgb(19, 182, 211) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 0%,  
+                        rgb(19, 182, 211) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 55%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 45%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    
+	height: 200%;
+	width: 40%;
+    margin-left: 11%;
+    margin-right: -11%;
+}
+.tab{
+    margin-left: 2%;
+    transform: skew(45deg);
+    background: rgb(19, 182, 211);
+
+}
+.tab.small{
+    height: 70%;
+    width: 5%;
+}
+.tab.large{
+    height: 70%;
+    flex-grow: 1;
+}
+.tab.selector{
+    height: 40%;
+    width: 7%;
+}
+.tab.bottom{
+    transform: skew(-45deg);
+}
+#top-tabs{
+    height: 100%;
+    width: 55%;
+    padding-right: 7%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bottom-tabs{
+    height: 100%;
+    width: 55%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#picture-frame{
+    background:
+        linear-gradient(135deg, 
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        top left,
+        linear-gradient(225deg, 
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        top right,
+        linear-gradient(315deg, 
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom right,
+        linear-gradient(45deg,  
+                        transparent 8%,  
+                        rgb(19, 182, 211) 0) 
+                        bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    color: rgb(3, 98, 107);
+    text-shadow: 0px 0px 1px rgb(3, 98, 107);
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    text-align: center;
+
+    height: 35%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#profile-pic{
+    height: 70%;
+    width: 80%;
+    margin: 6%;
+    margin-bottom: 3%;
+
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(13, 125, 145);
+    box-shadow: 0px 0px 1px rgb(13, 125, 145);
+}
