@@ -1,0 +1,17 @@
+{
+  "name": "personal-site-package",
+  "version": "1.0.0",
+  "babel": {
+    "env": {
+      "production": {
+        "plugins": [
+          "transform-react-constant-elements"
+        ]
+      }
+    }
+  },
+  "dependencies": {
+    "webpack": "^4.1.1",
+    "webpack-dev-server": "^3.1.1"
+  }
+}

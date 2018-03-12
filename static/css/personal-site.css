@@ -6,9 +6,29 @@ body{
         radial-gradient(rgb(5, 50, 58), rgb(2, 26, 31));
     background-repeat: no-repeat;
     height: 100vh;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial;
+    font-weight: 200;
 }
-p{
+p#side-menu{
     margin: 1%;
+    color: rgb(112, 234, 255);
+    font-size: 2.3vmin;
+}
+p#lable{
+    transform: skew(40deg);
+    margin: 5%;
+    margin-left: 10%;
+    font-size: 3.5vmin;
+}
+p#display-text{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2.5vmin;
+}
+h1#display-header{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-size: 5vmin;
 }
 #foreground{
     display: block;
@@ -64,9 +84,6 @@ p{
     align-items: center;
     flex-direction: column;
 
-    color: white;
-    font-size: 2vh;
-
     height: 96%;
     width: 90%;
     margin: 5% 5%;
@@ -97,7 +114,7 @@ p{
     align-items: center;
 
     height: 90%;
-    width: 30%;
+    width: 22%;
     position: relative;
 }
 #display{
@@ -160,8 +177,9 @@ p{
     background-repeat: no-repeat;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 
     height: 95%;
     width: 98%;
@@ -192,11 +210,15 @@ p{
                         rgb(19, 182, 211) 0) 
                         bottom right,
         linear-gradient(45deg,  
-                        transparent 0%,  
+                        transparent 50%,  
                         rgb(19, 182, 211) 0) 
                         bottom left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     
 	height: 200%;
     width: 60%;
@@ -293,10 +315,7 @@ p{
     align-items: center;
     flex-direction: column;
 
-    color: rgb(3, 98, 107);
-    text-shadow: 0px 0px 1px rgb(3, 98, 107);
-    font-size: 2.5vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vmin;
     line-height: 150%;
     text-align: center;
 
@@ -308,7 +327,7 @@ p{
 #profile-pic{
     height: 70%;
     width: 80%;
-    margin: 6%;
+    margin: 8%;
     margin-bottom: 3%;
 
     border-style: solid;
