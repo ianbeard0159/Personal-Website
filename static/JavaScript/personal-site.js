@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './app.js';
 
 console.log("rendering display window");
 
 ReactDOM.render(
-  <h1 id = "display-header">React Text</h1>,
+  <App />,
   document.getElementById('display-window')
 );
 

@@ -1,6 +1,7 @@
 {
   "name": "personal-site-package",
   "version": "1.0.0",
+  "main": "app.jsx",
   "babel": {
     "env": {
       "production": {
@@ -11,7 +12,9 @@
     }
   },
   "dependencies": {
-    "webpack": "^4.1.1",
-    "webpack-dev-server": "^3.1.1"
+    "webpack": "latest",
+    "webpack-dev-server": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
