@@ -224,6 +224,7 @@ h1#display-header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    font-weight: bold;
     
 	height: 200%;
     width: 60%;
@@ -260,7 +261,16 @@ h1#display-header{
     margin-left: 2%;
     transform: skew(45deg);
     background: rgb(19, 182, 211);
+    color: rgb(5, 50, 58);
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.glyphicon{
+    font-size: 2vmin;
+    font-weight: bold;
 }
 .tab.small{
     height: 70%;

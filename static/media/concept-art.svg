@@ -456,7 +456,7 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter9509"
+       id="filter9585"
        x="-0.0043330322"
        width="1.0086661"
        y="-0.0053797744"
@@ -464,7 +464,7 @@
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="2.2799997"
-         id="feGaussianBlur9511" />
+         id="feGaussianBlur9587" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -834,7 +834,7 @@
      inkscape:label="Layer 6"
      style="display:inline">
     <rect
-       style="opacity:0.148;fill:url(#pattern9401);fill-opacity:1;stroke:none;stroke-width:4.80000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter9509)"
+       style="opacity:0.148;fill:url(#pattern9401);fill-opacity:1;stroke:none;stroke-width:4.80000019;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter9585)"
        id="rect7847"
        width="1262.8568"
        height="1017.1429"

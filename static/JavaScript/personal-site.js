@@ -22,30 +22,36 @@ var about = [
 
 var skills = [
     // Page 1
-    '<h1 id = "display-header">Skills</h1> \
+    '<h1 id = "display-header">Front-End Design</h1> \
         <p id = "display-text">Page 1</p>',
     // Page 2
-    '<h1 id = "display-header">Skills</h1> \
+    '<h1 id = "display-header">Back-End Development</h1> \
         <p id = "display-text">Page 2</p>',
-    //Page 3
-    '<h1 id = "display-header">Skills</h1> \
-        <p id = "display-text">Page 3</p>'];
+    // Page 3
+    '<h1 id = "display-header">Video Editing</h1> \
+        <p id = "display-text">Page 3</p>',
+    // Page 4
+    '<h1 id = "display-header">Graphic Design</h1> \
+        <p id = "display-text">Page 4</p>'];
 
 var projects = [
     // Page 1
-    '<h1 id = "display-header">Projects</h1> \
+    '<h1 id = "display-header">Color-Picker Application</h1> \
         <p id = "display-text">Page 1</p>',
     // Page 2
-    '<h1 id = "display-header">Projects</h1> \
+    '<h1 id = "display-header">Personal Website</h1> \
         <p id = "display-text">Page 2</p>',
-    //Page 3
-    '<h1 id = "display-header">Projects</h1> \
+    // Page 3
+    '<h1 id = "display-header">Video Projects</h1> \
         <p id = "display-text">Page 3</p>'];
 
 var contact = [
     // Page 1
     '<h1 id = "display-header">Contact</h1> \
         <p id = "display-text">Page 1</p>'];
+
+
+
 
 function change_page(inState, inPage){
     var currentState = [];
@@ -66,7 +72,9 @@ function change_page(inState, inPage){
     }
 
     // Populate Tabs
-    html += '<div class = "left selector tab"></div>';
+    html += '<div class = "left selector tab">\
+                <span class="glyphicon glyphicon-menu-left"></span>\
+            </div>';
     for(var i = 0; i < currentState.length; i++){
         if(i == inPage){
             html += '<div class = "large tab"></div>';
@@ -75,7 +83,9 @@ function change_page(inState, inPage){
             html += '<div class = "small tab"></div>';
         }
     }
-    html += '<div class = "right selector tab"></div>';
+    html += '<div class = "right selector tab">\
+                <span class="glyphicon glyphicon-menu-right"></span>\
+            </div>';
 
     $("#top-tabs").html(html);
 
@@ -88,7 +98,31 @@ function change_page(inState, inPage){
 
 function change_state(inState){
     $("#lable").text(inState);
+    var html = '';
 
+    // Populate bottom tabs
+    if(inState == "About"){
+        html = '<div class = "small bottom tab"></div>';
+    }
+    else if(inState == "Skills"){
+        html = '<div class = "small bottom tab"></div>\
+        <div class = "small bottom tab"></div>';
+    }
+    else if(inState == "Projects"){
+        html = '<div class = "small bottom tab"></div>\
+        <div class = "small bottom tab"></div>\
+        <div class = "small bottom tab"></div>';
+    }
+    else{
+        html = '<div class = "small bottom tab"></div>\
+        <div class = "small bottom tab"></div>\
+        <div class = "small bottom tab"></div>\
+        <div class = "small bottom tab"></div>';
+    }
+
+    $("#bottom-tabs").html(html);
+
+    // Set the current page to the first page, and return the number of pages
     numPages = change_page(inState, 0);
     return numPages;
 }
